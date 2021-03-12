@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eco Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    
+    <link href="style.css" rel="stylesheet" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@200;300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <div class="top">
+
+      <div class="img">
+        <img src="images/logo.png" alt="Eco store Logo">
+      </div>
+
+      <div class="topnav_search">
+        <input id="topnav" type="text" placeholder="Let's Go Green!">
+        <i class="fa fa-search"></i>
+      </div>
+
+      <div class="topbar" style="font-family: 'Comfortaa', cursive;">
+        <button onclick="visible()">Login</button> 
+        
+        <button onclick="visible()">Signup</button>
+
+        <button onclick="current_items()"
+          style="background-image: url('images/cart.png'); 
+          background-size: cover; 
+          width: 40px; 
+          height: 40px;">
+        </button><p id="num"></p>
+
+      </div>
+
+    </div>
+      
+    <div class="menu" style="font-family: 'Pacifico', cursive; font-size: 20px; text-transform: capitalize;">       
+        
+      <div>
+        <a href="index.html" class="active">Home</a>  
+      </div>
+
+      <div><a href="wood.html">Wooden Products</a></div>
+
+      <div><a href="sap.html">Saplings</a></div>
+
+      <div>
+        <a href="contact.html">Contact</a>      
+      </div>
+
+      <div>
+        <a href="aboutus.html">About</a>
+      </div>      
+    </div>
+
+    <div class="header">
+    
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+          <div class="counting" style="color:black; text-align:center;">1 | 3</div>
+
+          <img src="images/w1.jpg" style="height: 500px; width: 700px;" class="slide_img"/>
+
+        </div>
+
+        <div class="mySlides fade">
+
+          <div class="counting" style="color:black;">2 | 3</div>
+          
+          <img src="images/img_2.jpg" style="height: 500px; width: 700px;" class="slide_img"/>
+        
+        </div>
+
+        <div class="mySlides fade">
+          
+          <div class="counting" style="color:black">3 | 3</div>
+
+          <img src="images/img_3.png" style="height: 500px; width: 700px;" class="slide_img"/>
+        
+        </div>
+
+      </div>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row" style="font-family: 'Montserrat', sans-serif;">
+      <div >
+        <div class="card">
+          <h1 class="card-title">Wood Products</h1>
+          <img src="images/img_5.jpeg"  class="home-image" style="padding:20px 0px 20px 0px;"/>
+          <hr>
+          <div class="card-body">
+            <a href="wood.html"><button class="button">BUY NOW!</button></a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div >
+        <div class="card" style="width: 18rem;">
+        <h1 class="card-title">Saplings</h1>
+          <img src="images/img_4.jpg"  class="home-image" style="padding:20px 0px 20px 0px;">
+          <hr>
+          <div class="card-body">
+            <a href="sap.html"><button class="button">BUY NOW!</button></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal" style="font-family: 'Comfortaa', cursive;">
+      <div class="modal_content">
+        <form> 
+          <div class="closeContainer"> 
+            <span onclick="visible()" class="close">&times;</span>
+            <h2 style="text-align:center;">ECO STORE</h2> 
+          </div> 
+        
+          <div class="main_container"> 
+            <label><b>Email ID</b></label> 
+            <input type="text" placeholder="Enter email ID" name="name" required> 
+            <label><b>Password</b></label> 
+            <input type="password" placeholder="Enter Password" name="pass" required> 
+            <hr>
+            <button type="submit" onclick="submit()">SUBMIT</button> 
+            <button type="button" onclick="visible()"
+            class="cancelbtn">Cancel</button> 
+          </div> 
+        </form>  
+      </div>  
+    </div>        
+   
+    <div class="footer" style="font-family: 'Comfortaa', cursive;">
+      <p>Designed for <a href="https://internship.internshipstudio.com/">Internship Studio</a><br>
+      </p> 
+    </div>
+
+  <script src="script.js"></script>
+  </body>
+</html>

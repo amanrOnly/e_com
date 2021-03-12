@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Contact </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@200;300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="menu" style="font-family: 'Pacifico', cursive; font-size: 20px; text-transform: capitalize;">       
+        
+      <div>
+        <a href="index.html">Home</a>  
+      </div>
+
+      <div>
+        <a href="wooden.html">Wooden Products</a>      
+      </div>
+
+      <div><a href="sap.html">Saplings</a></div>
+
+      <div>
+        <a href="contact.html" class="active">Contact</a>
+        
+      </div>
+
+      <div>
+        <a href="aboutus.html">About</a>
+      </div>      
+    </div>
+
+    <div class="header" id="contact_form">
+      <h1>Here's how to reach us</h1>
+
+      <form action="/action_page.php">
+        <label for="name">Full Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your full name..">
+        <br>
+        <label for="email">Email ID</label>
+        <input type="text" id="email" name="ID" placeholder="Your registered email ID">
+
+        <br>
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Asia">Asia</option>
+          <option value="east">East</option>
+          <option value="Europe">Europe</option>
+          <option value="west">West</option>
+        </select>
+
+        <br>
+
+        <label for="Select the category of your issue">Select the category of your issue</label>
+        <select id="Select the category of your issue" name="Select the category of your issue">
+          <option value="Order not received">Order not received</option>
+          <option value="Received Damaged Product">Received Damaged Product</option>
+          <option value="Warranty Claim">Warranty Claim</option>
+          <option value="Other">Other</option>
+        </select>        
+      
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+    <div class="footer" style="font-family: 'Comfortaa', cursive;">
+      <p>Designed for <a href="https://internship.internshipstudio.com/">Internship Studio</a><br>
+      </p> 
+    </div>
+      
+  </body>
+</html>
